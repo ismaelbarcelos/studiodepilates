@@ -1,11 +1,21 @@
+'use client'
+import React from "react";
 import Image from "next/image";
-import Menu from "./components/menu";
+import BenefitsSection from "@/app/components/aboutSection";
+import HeroSection from "@/app/components/horeSection";
+import Navbar from "@/app/components/navbar";
+import Sobre from "@/app/components/sobre";
+import Modalidade from "@/app/components/modalidadeSection";
 
-export default function Home() {
+export default function AppPilates() {
   return (
-    <div>
-      <h1>home</h1>
-      <Menu/>
-    </div>
+  <div className="min-h-screen bg-background dark">
+  <Navbar/>
+  <HeroSection/>
+  <Sobre/>
+  <Modalidade/>
+    <BenefitsSection/>
+  </div>  
+    
   );
 }
