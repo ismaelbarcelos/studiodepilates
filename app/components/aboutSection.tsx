@@ -3,7 +3,7 @@
 import React from "react";
 
 import { motion } from "framer-motion";
-import { Heart, Zap, Brain, Smile, Shield, Sparkles } from "lucide";
+import { Heart, Zap, Brain, Smile, Shield, Sparkles } from "lucide-react";
 
 const benefits = [
   {
