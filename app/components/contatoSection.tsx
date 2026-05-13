@@ -80,9 +80,12 @@ export default function Contato(){
           <div className=" p-10 border border-none rounded-3xl contato_back">
             <h2 className="text-6xl color_white">Sua primeira aula é por nossa conta</h2>
             <p className="color_white mt-5 mb-5">Experimente uma aula gratuita e sinta na prática os benefícios do Pilates. Sem compromisso — apenas movimento e bem-estar.</p>
-            <a   href="https://wa.me/5588999541010"
+            <button className="mt-10 bg-amber-50 rounded-full hover:bg-white w-60 h-12">
+                 <a   href="https://wa.me/5588999541010"
               target="_blank"
-              rel="noopener noreferrer" className="mt-10 bg-amber-50 rounded-full hover:bg-white w-90 h-20">Agendar pelo WhatsApp</a>
+              rel="noopener noreferrer" >Agendar pelo WhatsApp</a>
+            </button>
+            
           </div>
       </section>
     </div>

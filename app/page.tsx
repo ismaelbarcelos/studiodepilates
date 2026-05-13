@@ -8,6 +8,7 @@ import Sobre from "@/app/components/sobre";
 import Modalidade from "@/app/components/modalidadeSection";
 import Depoimentos from "./components/depoimentosSequetion";
 import Contato from "./components/contatoSection";
+import Footer from "./components/footerSection";
 
 export default function AppPilates() {
   return (
@@ -19,6 +20,7 @@ export default function AppPilates() {
     <BenefitsSection/>
     <Depoimentos/>
     <Contato/>
+    <Footer/>
   </div>  
     
   );
