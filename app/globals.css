@@ -81,6 +81,9 @@
 .font_heading{
    font-family: var(--font-heading)
 }
+.primary{
+  color: rgba(24, 97, 57, 0.959);
+}
 .color_green{
   background-color: rgba(24, 97, 57, 0.959);
 }
@@ -102,7 +105,43 @@ font-size: 1.0em;
 
 }
 #modalidades{
-     background-color: rgba(247, 240, 233, 0.911);
+     background-color: rgba(243, 239, 235, 0.815);
+}
+.font_mod{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.texto_modP{
+  color:rgb(103, 129, 103);
+  font-weight: 500;
+}
+
+.icons_background{
+  color:rgb(93, 129, 93);
+  background-color:rgba(234, 247, 234, 0.932);
+}
+.card_backG_bene :hover{
+  background-color:rgba(243, 252, 243, 0.39);
+  
+}
+.card_border{
+  border:1px solid rgba(210, 235, 210, 0.932);
+}
+.card_border:hover{
+  border:1px solid rgba(188, 235, 188, 0.932);
+  
+}
+.card_border_depo{
+  border:1px solid rgb(208, 214, 210);
+}
+#beneficios{
+  background-color: rgb(250, 247, 244);
+}
+
+#depoimentos{
+  background-color: rgba(250, 245, 239, 0.801);
+}
+.card_depo{
+  background-color: rgb(245, 244, 242);
 }
 
 body {

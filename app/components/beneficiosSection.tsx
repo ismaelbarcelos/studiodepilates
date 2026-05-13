@@ -4,6 +4,7 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import { Heart, Zap, Brain, Smile, Shield, Sparkles } from "lucide-react";
+import { div } from "framer-motion/m";
 
 const benefits = [
   {
@@ -49,34 +50,38 @@ export default function BenefitsSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <p className="font-body text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4">
+          <p className="text_green font_mod text-3xl mb-5 uppercase">
             Benefícios
           </p>
-          <h2 className="font-heading text-3xl md:text-5xl font-medium text-foreground leading-tight max-w-2xl mx-auto">
+          <h2 className="text-5xl font_heading md:text-6xl">
             Por que escolher o <em className="italic">Pilates</em>?
           </h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 card_backG_bene">
           {benefits.map((b, i) => (
+            
             <motion.div
               key={b.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group p-8 rounded-2xl border border-border hover:border-primary/30 hover:bg-accent/50 transition-all duration-500"
+              className=" p-8 rounded-2xl duration-500  card_border "
             >
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-             
+              
+              <div className="p-4 w-7 h-5 ">
+               <b.icon className="w-10 h-10 -mt-8 -ml-4 p-2 text-primary border rounded-full icons_background" />
               </div>
-              <h3 className="font-heading text-xl font-medium text-foreground mb-2">
+              <h3 className="font-heading text-xl font-medium text-foreground mb-2 text-black">
                 {b.title}
               </h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">
+              <p className="font-body text-sm text-muted-foreground leading-relaxed texto_modP">
                 {b.description}
               </p>
+            
             </motion.div>
+           
           ))}
         </div>
       </div>

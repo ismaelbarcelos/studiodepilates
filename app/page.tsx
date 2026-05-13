@@ -1,11 +1,12 @@
 'use client'
 import React from "react";
 import Image from "next/image";
-import BenefitsSection from "@/app/components/aboutSection";
+import BenefitsSection from "@/app/components/beneficiosSection";
 import HeroSection from "@/app/components/horeSection";
 import Navbar from "@/app/components/navbar";
 import Sobre from "@/app/components/sobre";
 import Modalidade from "@/app/components/modalidadeSection";
+import Depoimentos from "./components/depoimentosSequetion";
 
 export default function AppPilates() {
   return (
@@ -15,6 +16,7 @@ export default function AppPilates() {
   <Sobre/>
   <Modalidade/>
     <BenefitsSection/>
+    <Depoimentos/>
   </div>  
     
   );

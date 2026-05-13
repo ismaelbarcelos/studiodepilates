@@ -1,4 +1,5 @@
 import { div } from "framer-motion/m";
+import { motion } from "framer-motion";
 import { Content } from "next/font/google";
 
 const STUDIO_IMAGE = "https://media.base44.com/images/public/69fc8d9366c2521d149e38d2/bd2d1a553_generated_4f4c993e.png";
@@ -10,12 +11,28 @@ return(
  <div id="sobre">
   <section className=" grid grid-cols-1 md:grid-cols-2 gap-25 pt-25 pb-25 pl-5 pr-5 xl:ml-80 xl:mr-80">
 
+
+    <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+            className="relative"
+          >
+
    <div className="aspect-[5/4] rounded-2xl overflow-hidden mt-25"> 
    
    <img src={STUDIO_IMAGE} alt="" className="w-full h-full object-cover " />
     </div>
 
+</motion.div>
 
+ <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+          >
 
     <div className="">
       <h2 className="font-body text-sm font-medium tracking-[0.25em] uppercase text-primary mb-4 text_green">SOBRE NÓS</h2>
@@ -41,6 +58,8 @@ return(
       </div>
       
     </div>
+
+</motion.div>
 
   </section>
 

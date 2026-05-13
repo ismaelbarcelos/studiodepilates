@@ -1,4 +1,5 @@
 import { div, img } from "framer-motion/m";
+import { motion } from "framer-motion";
 
 
 const modalities = [
@@ -25,20 +26,53 @@ const modalities = [
 export default function Modalidade(){
   return(
     <div  >
-      <section id="modalidades" className="pt-50">
-        <div className=" flex-col mx-auto font_heading">
-          <h2 className="text_green font-medium">Modalidades</h2>
-          <h1>Encontre a aula <em>perfeita</em> para você</h1>
+      <section id="modalidades" className="pt-50 ">
+
+           <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7 }}
+          className="text-center mb-16"
+        >
+
+
+        <div className=" flex-col mx-auto ">
+          <h2 className="text_green font_mod text-3xl mb-5 uppercase">Modalidades</h2>
+          <h1 className="text-5xl font_heading">Encontre a aula <em>perfeita</em> para você</h1>
         </div>
+         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
 
-           {modalities.map((mod,indice)=>
-           <div>
-            <img src={mod.image} alt="" />
-            <p className="mt-10">{mod.description}</p> 
-            </div>)}
-        
+        <div className="grid md:grid-cols-3 gap-8 xl:ml-80 xl:mr-80 m-5">
+
+           {modalities.map((mod,indice)=>( 
+
+             <motion.div
+              key={mod.title}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: indice * 0.25 }}
+              className="group"
+            >
+
+           <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-6 relative">
+            <img className="object-cover group-hover:scale-105 transition-transform duration-700" src={mod.image} alt={mod.title} />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="font-heading text-2xl font-medium text-white">
+                    {mod.title}
+                  </h3>
+                </div>
+             </div>
+          
+             
+            </div> 
+             <p className="font-body text-md text-muted-foreground leading-relaxed mb-25 texto_modP font_mod">{mod.description}</p>
+            </motion.div>))}
+       
         </div>
         
       </section>
