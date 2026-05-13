@@ -7,6 +7,7 @@ import Navbar from "@/app/components/navbar";
 import Sobre from "@/app/components/sobre";
 import Modalidade from "@/app/components/modalidadeSection";
 import Depoimentos from "./components/depoimentosSequetion";
+import Contato from "./components/contatoSection";
 
 export default function AppPilates() {
   return (
@@ -17,6 +18,7 @@ export default function AppPilates() {
   <Modalidade/>
     <BenefitsSection/>
     <Depoimentos/>
+    <Contato/>
   </div>  
     
   );

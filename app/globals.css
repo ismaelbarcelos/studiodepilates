@@ -91,6 +91,7 @@
   color: rgba(24, 97, 57, 0.959);
 }
 
+
 .cor_clara{
   background-color: rgba(236, 236, 236, 0.247);
 }
@@ -119,6 +120,12 @@ font-size: 1.0em;
   color:rgb(93, 129, 93);
   background-color:rgba(234, 247, 234, 0.932);
 }
+.social_icon{
+  color:rgb(79, 114, 78);
+}
+.social_icon:hover{
+  color:rgb(18, 77, 15);
+}
 .card_backG_bene :hover{
   background-color:rgba(243, 252, 243, 0.39);
   
@@ -142,6 +149,14 @@ font-size: 1.0em;
 }
 .card_depo{
   background-color: rgb(245, 244, 242);
+}
+
+.contato_back{
+ background-color: 
+ rgb(58, 110, 58);
+}
+.color_white{
+  color:whitesmoke;
 }
 
 body {
