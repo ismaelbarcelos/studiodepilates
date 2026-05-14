@@ -10,9 +10,12 @@ import Depoimentos from "./components/depoimentosSequetion";
 import Contato from "./components/contatoSection";
 import Footer from "./components/footerSection";
 
+document.title = "Studio Pilates";
+
 export default function AppPilates() {
   return (
   <div className="min-h-screen bg-background dark">
+    
   <Navbar/>
   <HeroSection/>
   <Sobre/>
