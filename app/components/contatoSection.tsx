@@ -31,7 +31,17 @@ const contactInfo = [
 export default function Contato(){
   return(
     <div>
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-25 pt-25 pb-25 pl-5 pr-5 xl:ml-80 xl:mr-80">
+      <section id="contato" className="grid grid-cols-1 md:grid-cols-2 gap-25 pt-25 pb-25 pl-5 pr-5 xl:ml-80 xl:mr-80">
+
+         <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+            className="relative"
+          >
+
+
           <div>
             <h3 className="font_mod text_green text-3xl mb-3 uppercase">Contato</h3>
             <h1 className="font_heading text-6xl mb-3">Venha nos <em>conhecer</em></h1>
@@ -77,7 +87,17 @@ export default function Contato(){
 
           </div>
 
-          <div className=" p-10 border border-none rounded-3xl contato_back">
+          </motion.div>
+
+
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+          >
+
+          <div className=" p-10 border border-none rounded-3xl contato_back xl:w-100 ">
             <h2 className="text-6xl color_white">Sua primeira aula é por nossa conta</h2>
             <p className="color_white mt-5 mb-5">Experimente uma aula gratuita e sinta na prática os benefícios do Pilates. Sem compromisso — apenas movimento e bem-estar.</p>
             <button className="mt-10 bg-amber-50 rounded-full hover:bg-white w-60 h-12">
@@ -87,6 +107,8 @@ export default function Contato(){
             </button>
             
           </div>
+
+          </motion.div>
       </section>
     </div>
   )

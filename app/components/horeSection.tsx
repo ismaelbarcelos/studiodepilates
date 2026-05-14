@@ -60,7 +60,7 @@ export default function HeroSection() {
           >
             <a
               href="#contato"
-              className="font-body text-sm font-medium bg-primary text-primary-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity color_green"
+              className="font-body text-sm font-medium bg-primary text-primary-foreground px-8 py-4 rounded-full hover:opacity-90 transition-opacity contato_back"
             >
               Agende sua Aula Experimental
             </a>

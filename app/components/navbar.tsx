@@ -48,8 +48,9 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contato"
-            className="font-body text-sm font-medium bg-primary text-primary-foreground px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity color_green  "
+            href="https://wa.me/5588999541010"
+                target="_blanck"
+            className="font-body text-sm font-medium bg-primary text-primary-foreground px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity contato_back  "
           >
             Agende uma Aula
           </a>
@@ -83,9 +84,10 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="#contato"
+                href="https://wa.me/5588999541010"
+                target="_blanck"
                 onClick={() => setMobileOpen(false)}
-                className="block text-center font-body text-sm font-medium bg-primary text-primary-foreground px-5 py-3 rounded-full color_green"
+                className="block text-center font-body text-sm font-medium bg-primary text-primary-foreground px-5 py-3 rounded-full contato_back"
               >
                 Agende uma Aula
               </a>
